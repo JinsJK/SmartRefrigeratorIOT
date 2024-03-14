@@ -1,0 +1,26 @@
+From 046c8cb5f6a7179d1a16fe76e271385412108636 Mon Sep 17 00:00:00 2001
+From: Tobias Tefke <tobias@tefke.name>
+Date: Fri, 8 Sep 2023 10:45:13 +0200
+Subject: [PATCH] Add flag to include basic httpd server
+
+---
+ components/network/lwip/bouffalo.mk | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/components/network/lwip/bouffalo.mk b/components/network/lwip/bouffalo.mk
+index 2e79c417..01860445 100644
+--- a/components/network/lwip/bouffalo.mk
++++ b/components/network/lwip/bouffalo.mk
+@@ -12,6 +12,9 @@ COMPONENT_PRIV_INCLUDEDIRS :=
+ 
+ COMPONENT_SRCDIRS := src/api src/core src/core/ipv4 src/netif lwip-port/FreeRTOS lwip-port src/apps/altcp_tls
+ 
++ifeq ($(CONFIG_INCLUDE_HTTPD),1)
++COMPONENT_SRCDIRS +=  src/apps/http
++endif
+ 
+ ##
+ #CPPFLAGS +=
+-- 
+2.39.2
+

@@ -1,0 +1,34 @@
+name: Build Documentation
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+        
+      - name: install requirements
+        run: |
+          cd $GITHUB_WORKSPACE/src
+          pip install --requirement=requirements.txt
+    
+      - name: make html documentation
+        run: |
+          cd $GITHUB_WORKSPACE/src/en
+          make html
+          
+      - name: deploy to github pages
+        if: ${{ github.event_name == 'push' }}
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs
+          CLEAN: true
