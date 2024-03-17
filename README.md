@@ -1,3 +1,5 @@
+Smart Refrigerator: Integrating IoT for Enhanced Kitchen Efficiency. Project conducted by  Pooja Zambre(Leader), Nishank Swamy Daulath Nanjunda(Editor), Sailesh Sasidharan Lathakumari(Developer), Vinita Rane(Developer), and Jins Joseph Kakkanattu(Developer) during the year 2023-2024 for the Master of Applied Computer Science course under Prof. Ralf Colmar Staudemeyer, PhD at FH Schmalkalden University of Applied Sciences, Schmalkalden, Germany.
+
 # Pinecone-SL
 Development of a Smart Refrigerator system leveraging Pinecone microcontroller technology to enhance kitchen efficiency by integrating various sensors.
 
