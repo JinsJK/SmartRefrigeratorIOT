@@ -11,3 +11,4 @@ https://github.com/SmartRefrigeratorIOT/Integrating-IoT-for-Enhanced-Kitchen-Eff
 
 # Final Presentation
 The PDF file that was used for the projects final presentation can be found here
+https://github.com/SmartRefrigeratorIOT/Integrating-IoT-for-Enhanced-Kitchen-Efficiency/tree/29cea9772137664959f1d27687b9b4daf44a4540/Presentation%20slides
