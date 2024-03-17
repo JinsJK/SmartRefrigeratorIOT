@@ -1,7 +1,7 @@
 # Pinecone-SL
 Development of a Smart Refrigerator system leveraging Pinecone microcontroller technology to enhance kitchen efficiency by integrating various sensors.
 
-# Proof of Content
+# Proof of Concept
 below is a POC for the Smart Refrigerator project which includes a use case (pictures and video)
 https://drive.google.com/drive/folders/1Ahen2f7WQ0UJg8JQiSd88BiLiEYEGwbM 
 
